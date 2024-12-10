@@ -1,0 +1,15 @@
+<mj-wrapper
+    border="1px solid #DDE1E3"
+>
+    <mj-section padding="12px 10%">
+        <mj-column>
+            <mj-text
+                mj-class="text semi-sm"
+                css-class="c-quaternary"
+                align="center"
+            >
+                © Channel Information Technology Support and Leasing Services Corporation
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

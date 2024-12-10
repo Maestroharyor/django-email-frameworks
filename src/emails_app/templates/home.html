@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template Application API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .endpoint {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .endpoint h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .request-format {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Template Application API</h1>
+    
+    <div class="endpoint">
+        <h2>MJML Template Endpoint</h2>
+        <p>
+            <strong>URL:</strong> <code>/apply/mjml/</code><br>
+            <strong>Method:</strong> <code>POST</code><br>
+            <strong>Description:</strong> Apply using MJML email template
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>React Email Template Endpoint</h2>
+        <p>
+            <strong>URL:</strong> <code>/apply/react-email/</code><br>
+            <strong>Method:</strong> <code>POST</code><br>
+            <strong>Description:</strong> Apply using React Email template
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>Maizzle Template Endpoint</h2>
+        <p>
+            <strong>URL:</strong> <code>/apply/maizzle/</code><br>
+            <strong>Method:</strong> <code>POST</code><br>
+            <strong>Description:</strong> Apply using Maizzle template
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>Inky Template Endpoint</h2>
+        <p>
+            <strong>URL:</strong> <code>/apply/inky/</code><br>
+            <strong>Method:</strong> <code>POST</code><br>
+            <strong>Description:</strong> Apply using Inky template
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>HEML Template Endpoint</h2>
+        <p>
+            <strong>URL:</strong> <code>/apply/heml/</code><br>
+            <strong>Method:</strong> <code>POST</code><br>
+            <strong>Description:</strong> Apply using HEML template
+        </p>
+    </div>
+
+    <div class="request-format">
+        <h2>Request Format</h2>
+        <p>All endpoints expect a JSON payload with the following fields:</p>
+        <pre><code>{
+    "first_name": "string",
+    "last_name": "string", 
+    "job_posting_title": "string",
+    "salary": "string"
+}</code></pre>
+    </div>
+</body>
+</html>

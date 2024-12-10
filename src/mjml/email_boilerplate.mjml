@@ -1,0 +1,335 @@
+{% load static %}
+<!--
+    NOTE:
+    - DO NOT change this file unless addressed by the leads
+    - DO NOT change the layout. Only change the elements within the Content Section
+    - REMOVE all comments upon duplicating this boilerplate
+    - CHANGE the path of the external files based on the folder you placed your email, namely:
+        - styles
+        - header
+        - footer
+    - Add comments when necessary to give more context on the person who will integrate your email template.
+    - Use <mj-spacer /> for gaps within the elements of a section
+    - Use padding for gaps between sections
+    - Use the mj-style for custom css that cannot be achieved through the usual formatting
+ -->
+<mjml>
+    <mj-head>
+        <!--
+            NOTE:
+            - This is used as the subject of this email
+            - DO NOT FORGET to change this
+        -->
+        <mj-title>HQZen Boilerplate</mj-title>
+        <mj-include path="styles.mjml" />
+        <!--
+            NOTE:
+            - Remove this when the avatar container does not include a button
+            - Change the subtrahend of the calc in the min-width based on the size of the button
+        -->
+        <mj-style>
+            .with-btn {
+                min-width: calc(100% - 95px) !important;
+            }
+
+            @media screen and (max-width: 477px) {
+                .with-btn {
+                    padding: 4px 0 8px;
+                }
+
+                .btn table td {
+                    padding-top: 0px !important;
+                }
+
+                .btn table {
+                    width: 100% !important;
+                }
+
+                .btn a {
+                    display: block;
+                }
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#FAFAFA">
+        <!--
+            NOTE:
+            To replace the header image, simply change the path to the following platforms
+            - path="header_scalema.mjml"
+            - path="header_bposeats.mjml"
+        -->
+        <mj-include path="header_hqzen.mjml" />
+        <mj-wrapper
+            border-left="1px solid #DDE1E3"
+            border-right="1px solid #DDE1E3"
+            padding="32px 8%"
+        >
+            <!-- Header Section -->
+            <mj-section>
+                <mj-column>
+                    <mj-text mj-class="text h1">
+                        HQZen Boilerplate
+                    </mj-text>
+                    <mj-spacer height="8px" />
+                    <mj-text mj-class="text md">
+                        We are thrilled to share some incredible news regarding our exclusive membership program!
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- Content Section -->
+            <mj-section padding="24px 0">
+                <mj-column>
+                    <mj-text mj-class="text regular">
+                        From enhanced discounts to personalized offers, we've
+                        <span style="font-weight: 600;"> tailored these updates</span> with you in mind.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- Avatar Container -->
+            <mj-section
+                padding="12px"
+                background-color="#F4F5F6"
+                border-radius="4px"
+                css-class="section-border"
+            >
+                <mj-column width="36px">
+                    <mj-image
+                        src="{% static 'ministry/images/default-avatar.png' %}"
+                        width="36px"
+                        height="36px"
+                        border-radius="50%"
+                        mj-class="border"
+                    />
+                </mj-column>
+                <!--
+                    NOTE:
+                    If the avatar container does not contain a button,
+                    CHANGE the css-class to "person"
+                -->
+                <mj-column css-class="with-btn">
+                    <mj-text
+                        mj-class="text regular bold"
+                        css-class="center-text"
+                    >
+                        John Doe
+                    </mj-text>
+                    <mj-text
+                        mj-class="text semi-sm"
+                        css-class="center-text c-secondary"
+                    >
+                        john.doe@bposeats.com
+                    </mj-text>
+                    <mj-text
+                        mj-class="text semi-sm"
+                        css-class="center-text c-tertiary"
+                    >
+                        UI/UX Developer
+                    </mj-text>
+                </mj-column>
+                <!--
+                    NOTE:
+                    - Remove this when the avatar container does not include a button
+                    - Change the the min-width when needed
+                    - DO NOT REMOVE the href as this is needed to convert the text into an tag
+                -->
+                <mj-column width="59px">
+                    <mj-button
+                        css-class="btn"
+                        href="https://hqzen.com/"
+                    >
+                        Button
+                    </mj-button>
+                </mj-column>
+            </mj-section>
+            <!-- Avatar Container End -->
+            <mj-section padding="24px 0 24px">
+                <mj-column>
+                    <mj-text mj-class="text regular">
+                        We have curated a range of new benefits and features designed to make your membership even more rewarding and enjoyable.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- Tables -->
+            <mj-section css-class="tbl-container">
+                <mj-column>
+                    <mj-table
+                        mj-class="text semi-sm"
+                        css-class="tbl"
+                    >
+                        <tr>
+                            <th class="no-top no-left">
+                                Name
+                            </th>
+                            <th class="no-top">
+                                Email
+                            </th>
+                            <th
+                                class="no-top no-right"
+                                style="80px"
+                            >
+                                Date
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="no-left">
+                                John Doe
+                            </td>
+                            <td>
+                                john.doe@bposeats.com
+                            </td>
+                            <td class="no-right">
+                                Aug. 23
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="no-bottom no-left">
+                                Mary Sue
+                            </td>
+                            <td class="no-bottom">
+                                mary.sue@bposeats.com
+                            </td>
+                            <td class="no-bottom no-right">
+                                Aug. 23
+                            </td>
+                        </tr>
+                    </mj-table>
+                </mj-column>
+            </mj-section>
+            <!-- Tables End -->
+            <mj-section padding="24px 0 24px">
+                <mj-column>
+                    <mj-text mj-class="text regular">
+                        We have curated a range of new benefits and features designed to make your membership even more rewarding and enjoyable.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- Horizontal Tables -->
+            <mj-section css-class="tbl-container">
+                <mj-column>
+                    <mj-table
+                        mj-class="text semi-sm"
+                        css-class="tbl horizontal"
+                    >
+                        <tr>
+                            <th class="no-top no-left">
+                                Name
+                            </th>
+                            <td class="no-top no-right">
+                                John Doe
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="no-left">
+                                Email
+                            </th>
+                            <td class="no-right">
+                                john.doe@bposeats.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="no-bottom no-left">
+                                Date
+                            </th>
+                            <td class="no-bottom no-right">
+                                Aug. 23
+                            </td>
+                        </tr>
+                    </mj-table>
+                </mj-column>
+            </mj-section>
+            <!-- Horizontal Tables End -->
+            <mj-section padding="24px 0 24px">
+                <mj-column>
+                    <mj-text mj-class="text regular">
+                        We have curated a range of new benefits and features designed to make your membership even more rewarding and enjoyable.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- Avatar Container with Table -->
+            <mj-section
+                padding="12px"
+                background-color="#F4F5F6"
+                border-radius="4px"
+                css-class="section-border no-bottom-radius"
+            >
+                <mj-column width="36px">
+                    <mj-image
+                        src="{% static 'ministry/images/default-avatar.png' %}"
+                        width="36px"
+                        height="36px"
+                        border-radius="50%"
+                        mj-class="border"
+                    />
+                </mj-column>
+                <mj-column css-class="person">
+                    <mj-text
+                        mj-class="text regular bold"
+                        css-class="center-text"
+                    >
+                        John Doe
+                    </mj-text>
+                    <mj-text
+                        mj-class="text semi-sm"
+                        css-class="center-text c-secondary"
+                    >
+                        john.doe@bposeats.com
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section css-class="tbl-container no-top no-top-radius">
+                <mj-column>
+                    <mj-table
+                        mj-class="text semi-sm"
+                        css-class="tbl horizontal"
+                    >
+                        <tr>
+                            <th class="no-top no-left">
+                                Name
+                            </th>
+                            <td class="no-top no-right">
+                                John Doe
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="no-left">
+                                Email
+                            </th>
+                            <td class="no-right">
+                                john.doe@bposeats.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="no-bottom no-left">
+                                Date
+                            </th>
+                            <td class="no-bottom no-right">
+                                Aug. 23
+                            </td>
+                        </tr>
+                    </mj-table>
+                </mj-column>
+            </mj-section>
+            <!-- Avatar Container with Table End -->
+            <mj-section padding-top="24px">
+                <mj-column>
+                    <!--
+                        NOTE:
+                        - DO NOT REMOVE the href as this is needed to convert the text into an tag
+                        - To match the buttons based on the platform selected for the header,
+                        change the mj-class to the following:
+                            - css-class="btn cta_scalema"
+                            - css-class="btn cta_bposeats"
+                    -->
+                    <mj-button
+                        href="https://hqzen.com/"
+                        css-class="btn cta"
+                    >
+                        Button
+                    </mj-button>
+                </mj-column>
+            </mj-section>
+            <!-- Content Section End -->
+        </mj-wrapper>
+        <mj-include path="footer.mjml" />
+    </mj-body>
+</mjml>

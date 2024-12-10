@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Get the absolute path of the project root directory
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# Activate the virtual environment
+VENV_PATH="${PROJECT_ROOT}/.venv"
+source "${VENV_PATH}/bin/activate"
+
+# Run the Python manage script
+python3 "${PROJECT_ROOT}/bin/django_manage.py" "$@"

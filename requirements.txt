@@ -1,0 +1,8 @@
+Django==5.0
+djangorestframework==3.14.0
+python-mjml==1.0.0
+react-email==0.0.1
+maizzle==0.1.0
+inky-py==0.1.0
+heml==1.0.0
+python-dotenv==1.0.0

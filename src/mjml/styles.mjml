@@ -1,0 +1,292 @@
+<mj-font
+    name="Inter"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+/>
+
+<mj-attributes>
+    <mj-all
+        padding="0"
+        margin="0"
+    />
+    <mj-text
+        font-family="'Inter', 'Arial', sans-serif"
+        text-decoration="none"
+    />
+    <mj-class
+        name="text"
+        font-family="'Inter', 'Arial', sans-serif"
+        font-weight="400"
+        line-height="150%"
+        color="#0C0D0E"
+        letter-spacing="-0.08px"
+    />
+    <mj-class
+        name="h1"
+        font-size="1.25rem"
+        font-weight="600"
+        letter-spacing="-0.16px"
+    />
+    <mj-class
+        name="h2"
+        font-size="1.125rem"
+        font-weight="600"
+        letter-spacing="-0.16px"
+    />
+    <mj-class
+        name="h3"
+        font-weight="500"
+        font-size="1rem"
+    />
+    <mj-class
+        name="md"
+        font-size="0.9375rem"
+    />
+    <mj-class
+        name="regular"
+        font-size="0.875rem"
+    />
+    <mj-class
+        name="semi-sm"
+        font-size="0.8125rem"
+    />
+    <mj-class
+        name="sm"
+        font-size="0.75rem"
+    />
+    <mj-class
+        name="bold"
+        font-weight="600"
+    />
+    <mj-class
+        name="semibold"
+        font-weight="500"
+    />
+    <mj-class
+        name="italic"
+        font-style="italic"
+    />
+    <mj-class
+        name="border"
+        border="1px solid #DDE1E3"
+    />
+</mj-attributes>
+
+<mj-style>
+    @font-face {
+        font-family: 'Inter', 'Arial', sans-serif;
+        src: local('Inter'), local('Inter'), url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    .header {
+        min-width: calc(100% - 131px) !important;
+    }
+
+    .center-text div {
+        padding-left: 16px;
+    }
+
+    .person {
+        min-width: calc(100% - 36px) !important;
+    }
+
+    @media screen and (max-width: 477px) {
+        .header {
+            padding-top: 4px;
+        }
+
+        .center-text div {
+            text-align: center !important;
+            padding-left: 0;
+        }
+
+        .person {
+            padding-top: 4px;
+        }
+    }
+
+    .section-border {
+        border: 1px solid #DDE1E3;
+    }
+
+    .border {
+        box-shadow: 0 0 0 1px #DDE1E3;
+    }
+
+    .c-secondary {
+        color: #40484F;
+    }
+
+    .c-success {
+        color: #06B169;
+    }
+
+    .c-error {
+        color: #ED2B42;
+    }
+
+    .c-indigo {
+        color: #3974EA;
+    }
+
+    .c-accent div {
+        color: #008FF5 !important;
+    }
+
+    .c-secondary div {
+        color: #40484F !important;
+    }
+
+    .c-tertiary div {
+        color: #67747E !important;
+    }
+
+    .c-quaternary div {
+        color: #A0A9B1 !important;
+    }
+
+    .c-orange div {
+        color: #FA7F42 !important;
+    }
+
+    .c-indigo div {
+        color: #3974EA !important;
+    }
+
+    .tbl-container {
+        border: 1px solid #DDE1E3;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    .tbl td, .tbl th {
+        padding: 8px;
+        border: 1px solid #DDE1E3;
+        background: white;
+    }
+
+    .tbl th {
+        font-weight: 600;
+        text-align: left;
+        padding: 4px 8px;
+        color: #40484F;
+        background-color: #FAFAFA;
+    }
+
+    .horizontal th {
+        vertical-align: top;
+        padding: 8px;
+    }
+
+    .no-top {
+        border-top: 0 !important;
+    }
+
+    .no-bottom {
+        border-bottom: 0 !important;
+    }
+
+    .no-left {
+        border-left: 0 !important;
+    }
+
+    .no-right {
+        border-right: 0 !important;
+    }
+
+    .no-top-radius {
+        border-radius: 0 0 4px 4px !important;
+    }
+
+    .no-bottom-radius {
+        border-radius: 4px 4px 0 0 !important;
+    }
+
+    a {
+        color: #008FF5;
+        font-weight: 600;
+    }
+
+    .btn table td {
+        padding: 0 !important;
+        padding-top: 8px !important;
+        background-color: transparent !important;
+    }
+
+    .btn a {
+        background-color: white !important;
+        border: 1px solid #DDE1E3 !important;
+        border-radius: 4px !important;
+        padding: 8px !important;
+        font-family: 'Inter', 'Arial' !important;
+        font-weight: 400 !important;
+        line-height: 150% !important;
+        font-size: 0.8125rem !important;
+        color: #0C0D0E !important;
+        letter-spacing: -0.08px !important;
+    }
+
+    .cta a,
+    .cta_tertiary a,
+    .cta_indigo a,
+    .cta_scalema a,
+    .cta_bposeats a {
+        padding: 12px !important;
+        display: block !important;
+        font-weight: 600 !important;
+        font-size: 0.875rem !important;
+    }
+
+    .cta a,
+    .cta_scalema a,
+    .cta_indigo a,
+    .cta_bposeats a {
+        color: white !important;
+    }
+
+    .cta table,
+    .cta_tertiary table,
+    .cta_indigo table,
+    .cta_scalema table,
+    .cta_bposeats table {
+        width: 100%;
+    }
+
+    .cta a {
+        background-color: #008FF5 !important;
+        border-color: #008FF5 !important;
+    }
+
+    .cta_tertiary a {
+        background-color: #EBEDEF !important;
+        border-color: #EBEDEF !important;
+    }
+
+    .cta_scalema a {
+        background-color: #162E62 !important;
+        border-color: #162E62 !important;
+    }
+
+    .cta_bposeats a {
+        background-color: #0AB6FF !important;
+        border-color: #0AB6FF !important;
+    }
+
+    .cta_indigo a {
+        background-color: #3974EA !important;
+        border-color: #3974EA !important;
+    }
+
+    .success,
+    .error {
+        border-radius: 4px;
+    }
+
+    .success {
+        background-color: #D8FEEE;
+    }
+
+    .error {
+        background-color: #FAEDEE;
+    }
+</mj-style>

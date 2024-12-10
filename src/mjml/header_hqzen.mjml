@@ -1,0 +1,32 @@
+<mj-wrapper
+    border="1px solid #DDE1E3"
+    padding="24px 8%"
+    background-color="#F4F5F6"
+>
+    <mj-section>
+        <mj-column
+            width="131px"
+            vertical-align="middle"
+            padding-right="16px"
+        >
+            <mj-image
+                src="https://bposeats-email.s3.ap-southeast-1.amazonaws.com/hqzen.png"
+                alt="HQZen logo"
+                width="115px"
+                align="left"
+            />
+        </mj-column>
+        <mj-column
+            css-class="header"
+            vertical-align="middle"
+        >
+            <mj-text
+                mj-class="text semi-sm semibold"
+                css-class="c-tertiary"
+                align="left"
+            >
+                Find Zen in your workforce.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

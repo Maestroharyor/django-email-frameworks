@@ -197,3 +197,7 @@ docker-compose.dev.yml
 docker-compose.local.yml
 docker-compose.staging.yml
 docker-compose.testing.yml
+
+
+# Foundation Emails
+foundation-emails

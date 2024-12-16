@@ -3,10 +3,28 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "react-email-build": "email build --dir src/email_frameworks/react-email",
+    "react-email-dev": "email dev --dir src/email_frameworks/react-email",
+    "react-email-export": "email export --dir src/email_frameworks/react-email",
+    "maizzle-dev": "cd src/email_frameworks/maizzle && maizzle serve",
+    "maizzle-build": "cd src/email_frameworks/maizzle && maizzle build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@maizzle/framework": "latest",
+    "@react-email/components": "0.0.31",
+    "@react-email/tailwind": "1.0.4",
+    "heml": "^0.0.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwindcss-preset-email": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "react-email": "3.0.4"
+  }
 }

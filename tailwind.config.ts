@@ -2,6 +2,9 @@ import type { TailwindConfig } from "@react-email/tailwind";
 
 export default {
   theme: {
+    colors: {
+      primary: "#008FF5",
+    },
     fontSize: {
       xs: ["12px", { lineHeight: "16px" }],
       sm: ["14px", { lineHeight: "20px" }],

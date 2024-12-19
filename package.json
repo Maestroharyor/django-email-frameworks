@@ -14,13 +14,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@maizzle/framework": "latest",
     "@react-email/components": "0.0.31",
     "@react-email/tailwind": "1.0.4",
     "heml": "^0.0.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "tailwindcss-preset-email": "^1.1.0"
+    "@maizzle/framework": "latest",
+    "tailwindcss-preset-email": "latest"
   },
   "devDependencies": {
     "@types/react": "19.0.1",
